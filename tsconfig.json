@@ -1,5 +1,6 @@
 {
   "compileOnSave": false,
+  "exclude": ["dist"],
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
@@ -17,6 +18,14 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "common-core": [
+        "dist/common-core"
+      ],
+      "common-core/*": [
+        "dist/common-core/*"
+      ]
+    }
   }
 }
